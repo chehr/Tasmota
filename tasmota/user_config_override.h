@@ -111,4 +111,9 @@ Examples :
 #endif
 #define MY_LANGUAGE            de_DE
 
+#ifndef USE_DS18x20
+#define USE_DS18x20               // Add support for DS18x20 sensors with id sort, single scan and read retry (+2k6 code)
+//  #define W1_PARASITE_POWER     // Optimize for parasite powered sensors
+#endif
+
 #endif  // _USER_CONFIG_OVERRIDE_H_
